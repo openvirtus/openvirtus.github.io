@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Software development tools" />
+<meta name="author" content="Harkaitz Agirre" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work." />
+<meta property="og:description" content="Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work." />
+<link rel="canonical" href="https://devreal.org/devel.html" />
+<meta property="og:url" content="https://devreal.org/devel.html" />
+<meta property="og:site_name" content="/dev/real - Terminal tools for real sustained development." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Software development tools" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Harkaitz Agirre"},"description":"Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work.","headline":"Software development tools","url":"https://devreal.org/devel.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://devreal.org/feed.xml" title="/dev/real - Terminal tools for real sustained development." /><title>/dev/real - Terminal tools for real sustained development. | Software development tools</title>
+</head>
+<body>
+    <div class="flexWrapper"><header class="headerWrapper">
+  <div class="header">
+    <div>
+      <a class="terminal" href="/">
+        <span class="terminalHost">$</span><span class="terminalSeparator">&nbsp;cd&nbsp;<span style="opacity: 0.3;">/</span><strong>dev</strong><span style="opacity: 0.3;">/</span><strong>real.org</strong></span>
+      </a>
+    </div>
+    <input class="side-menu" type="checkbox" id="side-menu">
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span><span class="hamb-line-text visually-hidden">Menu</span></label>
+    <nav class="headerLinks">
+        <ul>
+            <li>
+                <a href="/style" title="Style" >
+                    ~/Style
+                </a>
+            </li>
+            <li>
+                <a href="/env" title="EnvVar" >
+                    ~/EnvVar
+                </a>
+            </li><li><div id="theme-toggle">
+  <div data-theme-controls>
+    <div class="color-scheme-status visually-hidden" role="status"></div>
+    <button class="color-scheme-toggle" title="Light and dark mode toggle">
+      <svg class="icon light" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <line x1="92.8" y1="59" x2="85.1" y2="40.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="43" y1="108.8" x2="24.5" y2="101.1" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="213" y1="108.8" x2="231.5" y2="101.1" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="163.2" y1="59" x2="170.9" y2="40.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="240" y1="160" x2="16" y2="160" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="208" y1="200" x2="48" y2="200" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <path d="M70.2,160a60,60,0,1,1,115.6,0" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></path>
+      </svg>
+      <svg class="icon dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <line x1="216" y1="112" x2="216" y2="64" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="240" y1="88" x2="192" y2="88" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="168" y1="24" x2="168" y2="56" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="184" y1="40" x2="152" y2="40" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <path d="M216.7,152.6A91.9,91.9,0,0,1,103.4,39.3h0A92,92,0,1,0,216.7,152.6Z" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+</li>
+        </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+<div class="content">
+        <main class="main" aria-label="Content"><article class="postWrapper">
+  <header class="postHeader">
+    <h1>Software development tools</h1>
+  </header>
+
+  <div style="max-width: 80ch;" class="postContent">
+    <h2 id="programming-languages">Programming languages</h2>
+
+<ul>
+  <li><a href="https://dvikan.no/ntnu-studentserver/kompendier/c-programming-in-linux.pdf">The C programming language</a>:
+Good for simple system programs and libraries.</li>
+  <li><a href="https://go.dev/">The Go programming language</a>:
+Good for complex system software, services and websites. It is statically typed and compiled, simple syntax.</li>
+  <li><a href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html">POSIX Shell Language</a>:
+Good for simple system scripts and automation tasks.</li>
+  <li><a href="http://www.tcl-lang.org/">Tcl/Tk</a>:
+Good for simple GUI applications and system scripts.</li>
+  <li><a href="https://www.python.org/">Python</a>:
+Good for automation tasks, extensive third party libraries.</li>
+</ul>
+
+<h2 id="version-control">Version Control</h2>
+
+<ul>
+  <li><a href="https://git-scm.com/">git</a> <em>(twp c)</em> : The stupid content tracker.</li>
+  <li><a href="https://github.com/jesseduffield/lazygit">lazygit</a> <em>(twp *go*)</em> : Git repository viewer.</li>
+  <li><a href="https://git-scm.com/book/en/v2/Appendix-A:-Git-in-Other-Environments-Graphical-Interfaces">gitk</a> <em>(gwp *tcl/tk*)</em>    : Git repository viewer.</li>
+  <li><a href="https://github.com/cli/cli">gh</a> <em>(twp *go*)</em> : GitHub client.</li>
+  <li><a href="https://github.com/sinclairtarget/git-who">git-who</a> <em>(twp *go*)</em> : See people responsible for the code.</li>
+</ul>
+
+<h2 id="shell-programming-utilities">Shell programming utilities</h2>
+
+<ul>
+  <li><a href="https://github.com/p-gen/smenu">smenu</a> <em>(t-p c)</em>: Menu program.</li>
+  <li><a href="https://github.com/junegunn/fzf">fzf</a> <em>(twp go)</em>: Menu program.</li>
+  <li><a href="/notes#dialog">dialog</a> <em>(twp c)</em> : Display dialog boxes from shell scripts.</li>
+  <li><a href="https://github.com/fumiyas/qrc">qrc</a> <em>(twp go)</em> : Display QRs in the terminal.</li>
+  <li><a href="https://github.com/charmbracelet/glow">glow</a> <em>(twp c)</em> : Render markdowns.</li>
+</ul>
+
+<h2 id="cc-programming-utilities">C/C++ programming utilities</h2>
+
+<p>Tags</p>
+
+<ul>
+  <li><a href="https://github.com/universal-ctags/ctags">ctags</a> <em>(twp)</em> : Universal ctags.</li>
+</ul>
+
+<p>Profiling</p>
+
+<ul>
+  <li><a href="https://github.com/VerySleepy/verysleep">sleepy</a> <em>(gw-)</em> : Windows profiler.</li>
+</ul>
+
+<h2 id="website-development-and-administration">Website development and administration</h2>
+
+<p>Frontend:</p>
+
+<ul>
+  <li><a href="https://htmx.org/">HTML/CSS/HTMX/Bootstrap</a>:
+For frontends you don’t need more, use HTMX for dynamic content.</li>
+</ul>
+
+<p>Administration utilities:</p>
+
+<ul>
+  <li><a href="https://github.com/brandonyoungdev/tldx">tldx</a> <em>(twp go)</em> : Domain availability analysis.</li>
+  <li><a href="https://github.com/nakabonne/ali">ali</a> <em>(twp go)</em>         : A website load testing tool.</li>
+  <li><a href="https://github.com/fabio42/ssl-checker">ssl-checker</a> <em>(twp go)</em> : Check SSL certificate status.</li>
+  <li><a href="https://github.com/TheYahya/enola">enola</a> <em>(twp go)</em>      : Hunt down social media accounts by username.</li>
+  <li><a href="https://github.com/ycd/dstp">dstp</a> <em>(twp go)</em>             : Common networking tests against websites.</li>
+</ul>
+
+<h2 id="sql-database-administration">SQL database administration.</h2>
+
+<ul>
+  <li><a href="https://github.com/jorgerojas26/lazysql">lazysql</a> <em>(twp go)</em> : TUI SQL database management tool.</li>
+  <li><a href="https://github.com/danvergara/dblab/">dblab</a> <em>(twp go)</em>      : Interactive client for PostgreSQL, MySQL, SQLite3, Oracle and SQL Server.</li>
+</ul>
+
+<h2 id="networking">Networking</h2>
+
+<ul>
+  <li><a href="https://www.wireshark.org/">wireshark</a> <em>(gwp)</em>        : Interactively dump and analyse network traffic.</li>
+  <li><a href="https://github.com/gcla/termshark">termshark</a> <em>(twp go)</em> : A TUI for wireshark.</li>
+  <li><a href="https://nmap.org/">nmap</a> <em>(twp)</em>                      : Network exploration tool and security / port scanner.</li>
+  <li><a href="https://github.com/allyring/pvw">pvw</a> <em>(twp go)</em>      : List listening ports.</li>
+</ul>
+
+
+  </div>
+</article>
+</main>
+      </div><!--
+<footer class="footer">
+  <span>
+      Copyright &copy; 2025 Harkaitz Agirre.
+      All Rights Reserved.
+  </span>
+</footer>
+-->
+</div>
+
+    <script src="/assets/js/theme.js"></script>
+  </body>
+</html>

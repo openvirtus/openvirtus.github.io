@@ -1,0 +1,1220 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: local("IBM Plex Mono"), url("../fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2") format("woff2"), url("../fonts/ibm-plex-mono/IBMPlexMono-Regular.woff") format("woff"), url("../fonts/ibm-plex-mono/IBMPlexMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: local("IBM Plex Mono Italic"), url("../fonts/ibm-plex-mono/IBMPlexMono-Italic.woff2") format("woff2"), url("../fonts/ibm-plex-mono/IBMPlexMono-Italic.woff") format("woff"), url("../fonts/ibm-plex-mono/IBMPlexMono-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: local("IBM Plex Mono SemiBold"), url("../fonts/ibm-plex-mono/IBMPlexMono-SemiBold.woff2") format("woff2"), url("../fonts/ibm-plex-mono/IBMPlexMono-SemiBold.woff") format("woff"), url("../fonts/ibm-plex-mono/IBMPlexMono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: local("IBM Plex Mono SemiBold Italic"), url("../fonts/ibm-plex-mono/IBMPlexMono-SemiBoldItalic.woff2") format("woff2"), url("../fonts/ibm-plex-mono/IBMPlexMono-SemiBoldItalic.woff") format("woff"), url("../fonts/ibm-plex-mono/IBMPlexMono-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: local("IBM Plex Mono Bold"), url("../fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2") format("woff2"), url("../fonts/ibm-plex-mono/IBMPlexMono-Bold.woff") format("woff"), url("../fonts/ibm-plex-mono/IBMPlexMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: local("IBM Plex Mono Bold Italic"), url("../fonts/ibm-plex-mono/IBMPlexMono-BoldItalic.woff2") format("woff2"), url("../fonts/ibm-plex-mono/IBMPlexMono-BoldItalic.woff") format("woff"), url("../fonts/ibm-plex-mono/IBMPlexMono-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: local("IBM Plex Mono Medium"), url("../fonts/ibm-plex-mono/IBMPlexMono-Medium.woff2") format("woff2"), url("../fonts/ibm-plex-mono/IBMPlexMono-Medium.woff") format("woff"), url("../fonts/ibm-plex-mono/IBMPlexMono-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: local("IBM Plex Sans"), url("../fonts/ibm-plex-sans/IBMPlexSans-Regular.woff2") format("woff2"), url("../fonts/ibm-plex-sans/IBMPlexSans-Regular.woff") format("woff"), url("../fonts/ibm-plex-sans/IBMPlexSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: local("IBM Plex Sans Italic"), url("../fonts/ibm-plex-sans/IBMPlexSans-Italic.woff2") format("woff2"), url("../fonts/ibm-plex-sans/IBMPlexSans-Italic.woff") format("woff"), url("../fonts/ibm-plex-sans/IBMPlexSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: local("IBM Plex Sans SemiBold"), url("../fonts/ibm-plex-sans/IBMPlexSans-SemiBold.woff2") format("woff2"), url("../fonts/ibm-plex-sans/IBMPlexSans-SemiBold.woff") format("woff"), url("../fonts/ibm-plex-sans/IBMPlexSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: local("IBM Plex Sans SemiBold Italic"), url("../fonts/ibm-plex-sans/IBMPlexSans-SemiBoldItalic.woff2") format("woff2"), url("../fonts/ibm-plex-sans/IBMPlexSans-SemiBoldItalic.woff") format("woff"), url("../fonts/ibm-plex-sans/IBMPlexSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: local("IBM Plex Sans Bold"), url("../fonts/ibm-plex-sans/IBMPlexSans-Bold.woff2") format("woff2"), url("../fonts/ibm-plex-sans/IBMPlexSans-Bold.woff") format("woff"), url("../fonts/ibm-plex-sans/IBMPlexSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: local("IBM Plex Sans Bold Italic"), url("../fonts/ibm-plex-sans/IBMPlexSans-BoldItalic.woff2") format("woff2"), url("../fonts/ibm-plex-sans/IBMPlexSans-BoldItalic.woff") format("woff"), url("../fonts/ibm-plex-sans/IBMPlexSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: local("IBM Plex Sans Medium"), url("../fonts/ibm-plex-sans/IBMPlexSans-Medium.woff2") format("woff2"), url("../fonts/ibm-plex-sans/IBMPlexSans-Medium.woff") format("woff"), url("../fonts/ibm-plex-sans/IBMPlexSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: local("IBM Plex Serif"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Regular.woff2") format("woff2"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Regular.woff") format("woff"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: local("IBM Plex Serif Italic"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Italic.woff2") format("woff2"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Italic.woff") format("woff"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: local("IBM Plex Serif SemiBold"), url("../fonts/ibm-plex-serif/IBMPlexSerif-SemiBold.woff2") format("woff2"), url("../fonts/ibm-plex-serif/IBMPlexSerif-SemiBold.woff") format("woff"), url("../fonts/ibm-plex-serif/IBMPlexSerif-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: local("IBM Plex Serif SemiBold Italic"), url("../fonts/ibm-plex-seif/IBMPlexSerif-SemiBoldItalic.woff2") format("woff2"), url("../fonts/ibm-plex-serif/IBMPlexSerif-SemiBoldItalic.woff") format("woff"), url("../fonts/ibm-plex-serif/IBMPlexSerif-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: local("IBM Plex Serif Bold"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Bold.woff2") format("woff2"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Bold.woff") format("woff"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: local("IBM Plex Serif Bold Italic"), url("../fonts/ibm-plex-serif/IBMPlexSerif-BoldItalic.woff2") format("woff2"), url("../fonts/ibm-plex-serif/IBMPlexSerif-BoldItalic.woff") format("woff"), url("../fonts/ibm-plex-serif/IBMPlexSerif-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  src: local("IBM Plex Serif Medium"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Medium.woff2") format("woff2"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Medium.woff") format("woff"), url("../fonts/ibm-plex-serif/IBMPlexSerif-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+.highlight .c {
+  color: var(--highlight-c);
+  font-style: italic;
+}
+.highlight .err {
+  color: var(--highlight-err);
+  background-color: var(--highlight-err-bg);
+}
+.highlight .k {
+  color: var(--highlight-k);
+  font-weight: 600;
+}
+.highlight .o {
+  color: var(--highlight-o);
+  font-weight: 600;
+}
+.highlight .cm {
+  color: var(--highlight-cm);
+  font-style: italic;
+}
+.highlight .cp {
+  color: var(--highlight-cp);
+  font-weight: 600;
+}
+.highlight .c1 {
+  color: var(--highlight-c1);
+  font-style: italic;
+}
+.highlight .cs {
+  color: var(--highlight-cs);
+  font-weight: 600;
+  font-style: italic;
+}
+.highlight .gd {
+  color: var(--highlight-gd);
+  background-color: var(--highlight-gd-bg);
+}
+.highlight .gd .x {
+  color: var(--highlight-gd-x);
+  background-color: var(--highlight-gd-x-bg);
+}
+.highlight .ge {
+  color: var(--highlight-ge);
+  font-style: italic;
+}
+.highlight .gr {
+  color: var(--highlight-gr);
+}
+.highlight .gh {
+  color: var(--highlight-gh);
+}
+.highlight .gi {
+  color: var(--highlight-gi);
+  background-color: var(--highlight-gi-bg);
+}
+.highlight .gi .x {
+  color: var(--highlight-gi-x);
+  background-color: var(--highlight-gi-x-bg);
+}
+.highlight .go {
+  color: var(--highlight-go);
+}
+.highlight .gp {
+  color: var(--highlight-gp);
+}
+.highlight .gs {
+  color: var(--highlight-gs);
+  font-weight: 600;
+}
+.highlight .gu {
+  color: var(--highlight-gu);
+}
+.highlight .gt {
+  color: var(--highlight-gt);
+}
+.highlight .kc {
+  color: var(--highlight-kc);
+  font-weight: 600;
+}
+.highlight .kd {
+  color: var(--highlight-kd);
+  font-weight: 600;
+}
+.highlight .kp {
+  color: var(--highlight-kp);
+  font-weight: 600;
+}
+.highlight .kr {
+  color: var(--highlight-kr);
+  font-weight: 600;
+}
+.highlight .kt {
+  color: var(--highlight-kt);
+  font-weight: 600;
+}
+.highlight .m {
+  color: var(--highlight-m);
+}
+.highlight .s {
+  color: var(--highlight-s);
+}
+.highlight .na {
+  color: var(--highlight-na);
+}
+.highlight .nb {
+  color: var(--highlight-nb);
+}
+.highlight .nc {
+  color: var(--highlight-nc);
+  font-weight: 600;
+}
+.highlight .no {
+  color: var(--highlight-no);
+}
+.highlight .ni {
+  color: var(--highlight-ni);
+}
+.highlight .ne {
+  color: var(--highlight-ne);
+  font-weight: 600;
+}
+.highlight .nf {
+  color: var(--highlight-nf);
+  font-weight: 600;
+}
+.highlight .nn {
+  color: var(--highlight-nn);
+}
+.highlight .nt {
+  color: var(--highlight-nt);
+}
+.highlight .nv {
+  color: var(--highlight-nv);
+}
+.highlight .ow {
+  color: var(--highlight-ow);
+  font-weight: 600;
+}
+.highlight .w {
+  color: var(--highlight-w);
+}
+.highlight .mf {
+  color: var(--highlight-mf);
+}
+.highlight .mh {
+  color: var(--highlight-mh);
+}
+.highlight .mi {
+  color: var(--highlight-mi);
+}
+.highlight .mo {
+  color: var(--highlight-mo);
+}
+.highlight .sb {
+  color: var(--highlight-sb);
+}
+.highlight .sc {
+  color: var(--highlight-sc);
+}
+.highlight .sd {
+  color: var(--highlight-sd);
+}
+.highlight .s2 {
+  color: var(--highlight-s2);
+}
+.highlight .se {
+  color: var(--highlight-se);
+}
+.highlight .sh {
+  color: var(--highlight-sh);
+}
+.highlight .si {
+  color: var(--highlight-si);
+}
+.highlight .sx {
+  color: var(--highlight-sx);
+}
+.highlight .sr {
+  color: var(--highlight-sr);
+}
+.highlight .s1 {
+  color: var(--highlight-s1);
+}
+.highlight .ss {
+  color: var(--highlight-ss);
+}
+.highlight .bp {
+  color: var(--highlight-bp);
+}
+.highlight .vc {
+  color: var(--highlight-vc);
+}
+.highlight .vg {
+  color: var(--highlight-vg);
+}
+.highlight .vi {
+  color: var(--highlight-vi);
+}
+.highlight .il {
+  color: var(--highlight-il);
+}
+
+:where(html) {
+  --background-color: #f4f4f4;
+  --text-color: #000000;
+  --title-text-color: #000000;
+  --header-background-color: #e0e0e0;
+  --nav-background-color: #e0e0e0;
+  --footer-background-color: #e0e0e0;
+  --code-background-color: #e0e0e0;
+  --border-color-01: #e0e0e0;
+  --border-color-02: #e0e0e0;
+  --border-color-03: #e0e0e0;
+  --table-background-color: #f4f4f4;
+  --table-border-color: #e0e0e0;
+  --table-header-background-color: #e0e0e0;
+  --table-header-border-color: #e0e0e0;
+  --table-text-color: #000000;
+  --table-zebra-color: #ffffff;
+  --table-border-color: #e0e0e0;
+  --table-text-color: #000000;
+  --link-color: #0043ce;
+  --link-active-color: #0043ce;
+  --link-hover-color: #0043ce;
+  --link-visited-color: #6929c4;
+  --highlight-c: #998;
+  --highlight-err: #a61717;
+  --highlight-err-bg: #e3d2d2;
+  --highlight-k: inherit;
+  --highlight-o: inherit;
+  --highlight-cm: #206f2b;
+  --highlight-cp: #206f2b;
+  --highlight-c1: #206f2b;
+  --highlight-cs: #206f2b;
+  --highlight-gd: #000;
+  --highlight-gd-bg: #fdd;
+  --highlight-gd-x: #000;
+  --highlight-gt-x-bg: #faa;
+  --highlight-ge: inherit;
+  --highlight-gr: #a00;
+  --highlight-gh: #999;
+  --highlight-gi: #000;
+  --highlight-gi-bg: #dfd;
+  --highlight-gi-x: #000;
+  --highlight-gt-x-bg: #afa;
+  --highlight-go: #888;
+  --highlight-gp: #555;
+  --highlight-gs: inherit;
+  --highlight-gu: #aaa;
+  --highlight-gt: #a00;
+  --highlight-kc: inherit;
+  --highlight-kd: inherit;
+  --highlight-kp: inherit;
+  --highlight-kr: inherit;
+  --highlight-kt: #458;
+  --highlight-m: #099;
+  --highlight-s: #d14;
+  --highlight-na: #008080;
+  --highlight-nb: #0086b3;
+  --highlight-nc: #458;
+  --highlight-no: #008080;
+  --highlight-ni: #800080;
+  --highlight-ne: #900;
+  --highlight-nf: #900;
+  --highlight-nn: #555;
+  --highlight-nt: #000080;
+  --highlight-nv: #008080;
+  --highlight-ow: inherit;
+  --highlight-w: #bbb;
+  --highlight-mf: #099;
+  --highlight-mh: #099;
+  --highlight-mi: #099;
+  --highlight-mo: #099;
+  --highlight-sb: #d14;
+  --highlight-sc: #d14;
+  --highlight-sd: #d14;
+  --highlight-s2: #d14;
+  --highlight-se: #d14;
+  --highlight-sh: #d14;
+  --highlight-si: #d14;
+  --highlight-sx: #d14;
+  --highlight-sr: #009926;
+  --highlight-s1: #d14;
+  --highlight-ss: #990073;
+  --highlight-bp: #999;
+  --highlight-vc: #008080;
+  --highlight-vg: #008080;
+  --highlight-vi: #008080;
+  --highlight-il: #099;
+}
+
+@media (prefers-color-scheme: dark) {
+  :where(html):not([data-color-scheme]) {
+    --background-color: #262626;
+    --text-color: #ffffff;
+    --title-text-color: #ffffff;
+    --header-background-color: #161616;
+    --nav-background-color: #161616;
+    --footer-background-color: #161616;
+    --code-background-color: #161616;
+    --border-color-01: #161616;
+    --border-color-02: #161616;
+    --border-color-03: #161616;
+    --table-background-color: #262626;
+    --table-border-color: #161616;
+    --table-header-background-color: #161616;
+    --table-header-border-color: #161616;
+    --table-text-color: #ffffff;
+    --table-zebra-color: #393939;
+    --link-color: #a6c8ff;
+    --link-active-color: #a6c8ff;
+    --link-hover-color: #a6c8ff;
+    --link-visited-color: #d4bbff;
+    --highlight-c: #545454;
+    --highlight-err: #f07178;
+    --highlight-err-bg: #e3d2d2;
+    --highlight-k: #89ddff;
+    --highlight-o: inherit;
+    --highlight-cm: #27e590;
+    --highlight-cp: #27e590;
+    --highlight-c1: #27e590;
+    --highlight-cs: #27e590;
+    --highlight-gd: #000;
+    --highlight-gd-bg: #fdd;
+    --highlight-gd-x: #000;
+    --highlight-gt-x-bg: #faa;
+    --highlight-ge: inherit;
+    --highlight-gr: #f07178;
+    --highlight-gh: #999;
+    --highlight-gi: #000;
+    --highlight-gi-bg: #dfd;
+    --highlight-gi-x: #000;
+    --highlight-gt-x-bg: #afa;
+    --highlight-go: #888;
+    --highlight-gp: #555;
+    --highlight-gs: inherit;
+    --highlight-gu: #aaa;
+    --highlight-gt: #f07178;
+    --highlight-kc: inherit;
+    --highlight-kd: inherit;
+    --highlight-kp: inherit;
+    --highlight-kr: inherit;
+    --highlight-kt: #ffcb6b;
+    --highlight-m: #f78c6c;
+    --highlight-s: #c3e88d;
+    --highlight-na: #008080;
+    --highlight-nb: #eeffff;
+    --highlight-nc: #ffcb6b;
+    --highlight-no: #008080;
+    --highlight-ni: #800080;
+    --highlight-ne: #900;
+    --highlight-nf: #82aaff;
+    --highlight-nn: #555;
+    --highlight-nt: #ffcb6b;
+    --highlight-nv: #eeffff;
+    --highlight-ow: inherit;
+    --highlight-w: #eeffff;
+    --highlight-mf: #f78c6c;
+    --highlight-mh: #f78c6c;
+    --highlight-mi: #f78c6c;
+    --highlight-mo: #f78c6c;
+    --highlight-sb: #c3e88d;
+    --highlight-sc: #c3e88d;
+    --highlight-sd: #c3e88d;
+    --highlight-s2: #c3e88d;
+    --highlight-se: #eeffff;
+    --highlight-sh: #c3e88d;
+    --highlight-si: #c3e88d;
+    --highlight-sx: #c3e88d;
+    --highlight-sr: #c3e88d;
+    --highlight-s1: #c3e88d;
+    --highlight-ss: #c3e88d;
+    --highlight-bp: #999;
+    --highlight-vc: #ffcb6b;
+    --highlight-vg: #eeffff;
+    --highlight-vi: #eeffff;
+    --highlight-il: #f78c6c;
+  }
+}
+:where(html)[data-color-scheme=dark] {
+  --background-color: #262626;
+  --text-color: #ffffff;
+  --title-text-color: #ffffff;
+  --header-background-color: #161616;
+  --nav-background-color: #161616;
+  --footer-background-color: #161616;
+  --code-background-color: #161616;
+  --border-color-01: #161616;
+  --border-color-02: #161616;
+  --border-color-03: #161616;
+  --table-background-color: #262626;
+  --table-border-color: #161616;
+  --table-header-background-color: #161616;
+  --table-header-border-color: #161616;
+  --table-text-color: #ffffff;
+  --table-zebra-color: #393939;
+  --link-color: #a6c8ff;
+  --link-active-color: #a6c8ff;
+  --link-hover-color: #a6c8ff;
+  --link-visited-color: #d4bbff;
+  --highlight-c: #545454;
+  --highlight-err: #f07178;
+  --highlight-err-bg: #e3d2d2;
+  --highlight-k: #89ddff;
+  --highlight-o: inherit;
+  --highlight-cm: #27e590;
+  --highlight-cp: #27e590;
+  --highlight-c1: #27e590;
+  --highlight-cs: #27e590;
+  --highlight-gd: #000;
+  --highlight-gd-bg: #fdd;
+  --highlight-gd-x: #000;
+  --highlight-gt-x-bg: #faa;
+  --highlight-ge: inherit;
+  --highlight-gr: #f07178;
+  --highlight-gh: #999;
+  --highlight-gi: #000;
+  --highlight-gi-bg: #dfd;
+  --highlight-gi-x: #000;
+  --highlight-gt-x-bg: #afa;
+  --highlight-go: #888;
+  --highlight-gp: #555;
+  --highlight-gs: inherit;
+  --highlight-gu: #aaa;
+  --highlight-gt: #f07178;
+  --highlight-kc: inherit;
+  --highlight-kd: inherit;
+  --highlight-kp: inherit;
+  --highlight-kr: inherit;
+  --highlight-kt: #ffcb6b;
+  --highlight-m: #f78c6c;
+  --highlight-s: #c3e88d;
+  --highlight-na: #008080;
+  --highlight-nb: #eeffff;
+  --highlight-nc: #ffcb6b;
+  --highlight-no: #008080;
+  --highlight-ni: #800080;
+  --highlight-ne: #900;
+  --highlight-nf: #82aaff;
+  --highlight-nn: #555;
+  --highlight-nt: #ffcb6b;
+  --highlight-nv: #eeffff;
+  --highlight-ow: inherit;
+  --highlight-w: #eeffff;
+  --highlight-mf: #f78c6c;
+  --highlight-mh: #f78c6c;
+  --highlight-mi: #f78c6c;
+  --highlight-mo: #f78c6c;
+  --highlight-sb: #c3e88d;
+  --highlight-sc: #c3e88d;
+  --highlight-sd: #c3e88d;
+  --highlight-s2: #c3e88d;
+  --highlight-se: #eeffff;
+  --highlight-sh: #c3e88d;
+  --highlight-si: #c3e88d;
+  --highlight-sx: #c3e88d;
+  --highlight-sr: #c3e88d;
+  --highlight-s1: #c3e88d;
+  --highlight-ss: #c3e88d;
+  --highlight-bp: #999;
+  --highlight-vc: #ffcb6b;
+  --highlight-vg: #eeffff;
+  --highlight-vi: #eeffff;
+  --highlight-il: #f78c6c;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: IBM Plex Sans, -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Segoe UI Emoji, Segoe UI Symbol, Apple Color Emoji, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Mono", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+  font-weight: 600;
+}
+
+b,
+strong,
+th {
+  font-weight: 600 !important;
+}
+
+article {
+  font-size: 1.05rem;
+}
+
+tt,
+code,
+kbd,
+samp {
+  font-family: IBM Plex Mono, Menlo, Inconsolata, Consolas, Roboto Mono, Ubuntu Mono, Liberation Mono, Courier New, monospace;
+}
+
+table {
+  border-collapse: collapse;
+  padding: initial;
+  margin: 0 0 26.25px 0;
+}
+
+th,
+tr,
+td {
+  border: 1px solid rgba(127, 127, 127, 0.5);
+  padding: 7.5px 11.25px;
+  margin: initial;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.clear {
+  clear: both;
+}
+
+.pagination {
+  padding: 7.5px 0 22.5px 0;
+  text-align: center;
+}
+.pagination .paginationPages {
+  clear: both;
+  padding-inline-start: 0;
+}
+.pagination .paginationPages li {
+  list-style-type: none;
+  margin: 7.5px;
+  display: inline-flex;
+}
+.pagination .paginationPages li div {
+  min-width: 3em;
+  font-size: 120%;
+  background-color: var(--header-background-color);
+  text-align: center;
+  box-sizing: border-box;
+}
+.pagination .paginationPages li div span,
+.pagination .paginationPages li div a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 15px 0;
+  text-decoration: none;
+}
+.pagination .paginationPages li div.pageLinkActive:hover {
+  background-color: rgba(127, 127, 127, 0.25);
+}
+
+.footer {
+  background-color: var(--footer-background-color);
+  padding: 15px;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.footerLink {
+  color: var(--text-color);
+}
+
+.header {
+  font-family: "IBM Plex Mono", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+  padding: 0 20px;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 992px) {
+  .header {
+    width: 82.5%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header {
+    width: 92%;
+  }
+}
+
+.headerWrapper {
+  background-color: var(--header-background-color);
+  font-family: IBM Plex Mono, Menlo, Inconsolata, Consolas, Roboto Mono, Ubuntu Mono, Liberation Mono, Courier New, monospace;
+  overflow: auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.headerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.headerLinks ul li {
+  display: inline;
+  margin: 5px;
+}
+.headerLinks ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.terminal,
+.terminal:hover {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.terminal .terminalUser,
+.terminal .terminalAt,
+.terminal .terminalHost,
+.terminal .terminalPath {
+  color: var(--link-color);
+}
+
+.hamb {
+  cursor: pointer;
+  float: right;
+  display: none;
+  padding: 10px 4px;
+}
+
+.hamb-line {
+  background: var(--text-color);
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+}
+
+/* Style span tag */
+.hamb-line::before,
+.hamb-line::after {
+  background: var(--text-color);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.hamb-line::before {
+  top: 5px;
+}
+
+.hamb-line::after {
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+}
+
+.side-menu:checked ~ .headerLinks {
+  max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .headerLinks {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: var(--background-color);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .headerLinks ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hamb {
+    display: block;
+  }
+}
+div#theme-toggle {
+  margin: 0;
+  padding: 0;
+  font-size: 125%;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+}
+
+.postsEntries .postInfo, .tagsEntries .postInfo {
+  margin: 2rem 0;
+  min-height: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(127, 127, 127, 0.5);
+}
+
+.postsEntries .postInfo {
+  padding-bottom: 0;
+}
+
+.postInfo:last-of-type {
+  border-bottom: 1px solid rgba(127, 127, 127, 0.5);
+  padding-bottom: 2rem;
+}
+
+.postsEntries .postInfo:last-of-type {
+  padding-bottom: 1rem;
+}
+
+.postDate {
+  color: var(--text-color);
+}
+
+.postsEntries .postDate, .tagsEntries .postDate {
+  float: right;
+}
+
+.postTitle {
+  text-decoration: none;
+  font-family: "IBM Plex Mono", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+  font-size: 1.2em;
+  font-weight: 400;
+  float: left;
+  width: 75%;
+  margin: 0 0 1rem 0;
+}
+
+.postTitle.capitalize-title {
+  text-transform: capitalize;
+}
+
+.postHeader {
+  overflow: hidden;
+}
+
+.postsList {
+  margin-top: 20px;
+}
+
+.postListItem {
+  padding: 20px;
+  background-color: var(--background-color);
+  margin-bottom: 20px;
+}
+
+.postListLink:hover {
+  text-decoration: underline;
+}
+
+.postExcerpt {
+  text-align: initial;
+  text-decoration: none;
+  color: var(--text-color);
+  clear: both;
+}
+.postExcerpt h2 {
+  font-size: 1.1rem !important;
+  font-weight: 700;
+}
+.postExcerpt h3 {
+  font-size: 1.05rem !important;
+  font-weight: 500;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.noDecoration {
+  text-decoration: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.socialNavbar ul {
+  list-style: none;
+  padding: 0;
+}
+.socialNavbar ul li {
+  display: inline;
+}
+.socialNavbar a {
+  color: var(--text-color);
+  text-shadow: var(--background-color) 0px 0px 2px;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  margin: 9.99px;
+  text-transform: lowercase;
+}
+
+#theme-toggle {
+  vertical-align: sub;
+}
+
+[data-theme-controls] {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+button.color-scheme-toggle {
+  all: unset;
+  display: revert;
+}
+
+.color-scheme-toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: var(--space-xs);
+  cursor: pointer;
+}
+
+.color-scheme-toggle .light {
+  display: block;
+}
+
+.color-scheme-toggle .dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .color-scheme-toggle .light {
+    display: none;
+  }
+  .color-scheme-toggle .dark {
+    display: block;
+  }
+}
+[data-color-scheme=light] .color-scheme-toggle .light {
+  display: block;
+}
+
+[data-color-scheme=light] .color-scheme-toggle .dark {
+  display: none;
+}
+
+[data-color-scheme=dark] .color-scheme-toggle .light {
+  display: none;
+}
+
+[data-color-scheme=dark] .color-scheme-toggle .dark {
+  display: block;
+}
+
+.color-scheme-toggle:active {
+  transform: translateY(1px);
+}
+
+.color-scheme-toggle:focus-visible {
+  outline: 2px dashed var(--color-secondary);
+  outline-offset: var(--outline-offset);
+}
+
+.color-scheme-toggle .focus-arrows {
+  display: none;
+  position: absolute;
+  bottom: -0.6em;
+  left: 100%;
+  color: var(--color-secondary);
+  transform: translateX(50%) rotate(45deg);
+  pointer-events: none;
+}
+
+.color-scheme-toggle:focus-visible .focus-arrows {
+  display: block;
+}
+
+.content {
+  text-align: center;
+  flex: 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.vertical {
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  flex: 1 auto;
+}
+
+.main {
+  height: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .main {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main {
+    width: 92%;
+  }
+}
+
+body div.content a:link,
+body div.content a:active {
+  color: var(--link-color);
+}
+body div.content a:visited {
+  color: var(--link-visited-color);
+}
+
+article header h1 {
+  font-size: 2rem;
+}
+
+.metaTag,
+.metaCategory {
+  display: inline-flex;
+  font-family: "IBM Plex Mono", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+  font-size: 1.2em;
+  padding: 0 45px 15px 0;
+}
+
+.indexWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.indexHeader {
+  font-size: 3em;
+}
+
+.indexHeader .authorPronouns {
+  font-style: italic;
+  font-size: 50%;
+}
+
+.authorPronouns::before {
+  content: "(";
+}
+
+.authorPronouns::after {
+  content: ")";
+}
+
+.listHeader,
+.listContent {
+  text-align: left;
+}
+
+.postWrapper {
+  text-align: left;
+  padding: 20.001px;
+}
+
+.postMetadata {
+  font-family: "IBM Plex Mono", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+  display: block;
+  background: var(--header-background-color);
+  padding: 20.001px;
+}
+
+dt,
+dd {
+  line-height: 1.5;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+dt {
+  grid-column-start: 1;
+}
+
+dd {
+  grid-column-start: 2;
+}
+
+dt::after {
+  content: ":";
+}
+
+.highlight {
+  margin: 0;
+}
+
+.highlight pre {
+  background-color: var(--header-background-color);
+  margin: 0;
+  padding: 20.001px;
+  overflow-y: scroll;
+}
+
+.pageNavFooter {
+  border-top: 1px solid rgba(127, 127, 127, 0.5);
+  text-align: left;
+  margin-top: 45px;
+  padding: 20.001px;
+}
+
+.pagePrevious,
+.pageNext {
+  width: 35%;
+  margin-bottom: 30px;
+}
+
+.pagePrevious {
+  float: left;
+}
+
+.pagePrevious a::before {
+  content: "← ";
+}
+
+.pageNext {
+  float: right;
+  text-align: right;
+}
+
+.pageNext a::after {
+  content: " →";
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Busybox + OpenSSH + Windows" />
+<meta name="author" content="Harkaitz Agirre" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work." />
+<meta property="og:description" content="Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work." />
+<link rel="canonical" href="https://devreal.org/windows.html" />
+<meta property="og:url" content="https://devreal.org/windows.html" />
+<meta property="og:site_name" content="/dev/real - Terminal tools for real sustained development." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Busybox + OpenSSH + Windows" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Harkaitz Agirre"},"description":"Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work.","headline":"Busybox + OpenSSH + Windows","url":"https://devreal.org/windows.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://devreal.org/feed.xml" title="/dev/real - Terminal tools for real sustained development." /><title>/dev/real - Terminal tools for real sustained development. | Busybox + OpenSSH + Windows</title>
+</head>
+<body>
+    <div class="flexWrapper"><header class="headerWrapper">
+  <div class="header">
+    <div>
+      <a class="terminal" href="/">
+        <span class="terminalHost">$</span><span class="terminalSeparator">&nbsp;cd&nbsp;<span style="opacity: 0.3;">/</span><strong>dev</strong><span style="opacity: 0.3;">/</span><strong>real.org</strong></span>
+      </a>
+    </div>
+    <input class="side-menu" type="checkbox" id="side-menu">
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span><span class="hamb-line-text visually-hidden">Menu</span></label>
+    <nav class="headerLinks">
+        <ul>
+            <li>
+                <a href="/style" title="Style" >
+                    ~/Style
+                </a>
+            </li>
+            <li>
+                <a href="/env" title="EnvVar" >
+                    ~/EnvVar
+                </a>
+            </li><li><div id="theme-toggle">
+  <div data-theme-controls>
+    <div class="color-scheme-status visually-hidden" role="status"></div>
+    <button class="color-scheme-toggle" title="Light and dark mode toggle">
+      <svg class="icon light" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <line x1="92.8" y1="59" x2="85.1" y2="40.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="43" y1="108.8" x2="24.5" y2="101.1" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="213" y1="108.8" x2="231.5" y2="101.1" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="163.2" y1="59" x2="170.9" y2="40.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="240" y1="160" x2="16" y2="160" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="208" y1="200" x2="48" y2="200" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <path d="M70.2,160a60,60,0,1,1,115.6,0" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></path>
+      </svg>
+      <svg class="icon dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <line x1="216" y1="112" x2="216" y2="64" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="240" y1="88" x2="192" y2="88" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="168" y1="24" x2="168" y2="56" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="184" y1="40" x2="152" y2="40" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <path d="M216.7,152.6A91.9,91.9,0,0,1,103.4,39.3h0A92,92,0,1,0,216.7,152.6Z" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+</li>
+        </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+<div class="content">
+        <main class="main" aria-label="Content"><article class="postWrapper">
+  <header class="postHeader">
+    <h1>Busybox + OpenSSH + Windows</h1>
+  </header>
+
+  <div style="max-width: 80ch;" class="postContent">
+    <p>MS Windows is not a great operating system for development, but it is
+ubiquitous. It is possible to transform it into a decent development
+environment.</p>
+
+<p>The biggest problem with Windows is the lack of a decent shell and
+command line tools. <code class="language-plaintext highlighter-rouge">Cygwin</code> is an option, but it tries to be a full
+POSIX emulation layer, which is overkill for most users and causes
+compatibility issues with native Windows applications. <code class="language-plaintext highlighter-rouge">MSYS2</code> is
+another option, but it is also a large distribution and not very
+portable.</p>
+
+<p>The best option is to use <code class="language-plaintext highlighter-rouge">busybox-w32</code>, a minimal set of command line
+tools compiled for Windows in a single executable. It provides a
+POSIX-like shell and numerous common utilities.</p>
+
+<h2 id="installing-busybox-and-openssh">Installing Busybox and OpenSSH</h2>
+
+<h3 id="step-1-install-busybox-w32">Step 1: Install Busybox-w32</h3>
+
+<p>Download the <a href="https://frippery.org/busybox/">busybox-w32</a> and install
+it in <code class="language-plaintext highlighter-rouge">C:\Windows\System32</code> with the following names:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">sh.exe</code> : The shell.</li>
+  <li><code class="language-plaintext highlighter-rouge">lash.exe</code> : The shell with <code class="language-plaintext highlighter-rouge">-l</code> option enabled.</li>
+</ul>
+
+<h3 id="step-2-install-openssh-and-make-it-work-with-busybox">Step 2: Install OpenSSH and make it work with Busybox</h3>
+
+<p>Install OpenSSH Server.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Settings &gt; System &gt; Optional Features
+-&gt;[View features]
+-&gt;[Type OpenSSH]
+-&gt;[Install OpenSSH]
+</code></pre></div></div>
+
+<p>Configure the service, initialize <code class="language-plaintext highlighter-rouge">ProgramData</code> settings.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Windows]-&gt;[Services (Run as administrator)]
+- Scroll to "OpenSSH SSH Server".
+- Startup type: Automatic.
+- Click recovery: Restart in 5 minutes.
+- Start service.
+</code></pre></div></div>
+
+<p>Edit configuration.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Open CMD as administrator.
+- &gt; cd C:\ProgramData\ssh
+- &gt; notepad sshd_config
+- Uncomment: PubkeyAuthentication yes
+- Uncomment: StrickModes no
+- Comment: Just at the botton, "Match Group administrators" AuthorizedKeysFile section.
+</code></pre></div></div>
+
+<p>Set busybox as the default shell.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Open powershell.
+- $ New-ItemProperty -Path "HKLM:\SOFTWARE\OpenSSH" -Name DefaultShell -Value "C:\Windows\System32\lash.exe" -PropertyType String -Force
+</code></pre></div></div>
+
+<h3 id="step-3-install-other-useful-tools">Step 3: Install other useful tools</h3>
+
+<p>Search programs with “w” in the <a href="/">program list</a>, install the binaries
+in <code class="language-plaintext highlighter-rouge">$LOCALAPPDATA\Microsoft\WindowsApps</code>, it is already in your PATH.</p>
+
+<h2 id="windows-only-software">Windows only software.</h2>
+
+<p>Desktop:</p>
+
+<ul>
+  <li><a href="https://github.com/Open-Shell/Open-Shell-Menu"><code class="language-plaintext highlighter-rouge">open-shell</code></a> <em>(gw-)</em> : Better start menu.</li>
+  <li><a href="https://sourceforge.net/projects/vcxsrv"><code class="language-plaintext highlighter-rouge">vcxsrv</code></a> <em>(gw-)</em> : X11 Server.</li>
+</ul>
+
+<p>Automation tools:</p>
+
+<ul>
+  <li><a href="https://www.nirsoft.net/utils/nircmd.html"><code class="language-plaintext highlighter-rouge">nircmd</code></a> <em>(tw-)</em> : Windows automation tool.</li>
+</ul>
+
+<p>Corporate nonsense management:</p>
+
+<ul>
+  <li><a href="https://github.com/stigoleg/keep-alive"><code class="language-plaintext highlighter-rouge">keep-alive</code></a> <em>(twp)</em> : Prevent your system from going to sleep.</li>
+</ul>
+
+  </div>
+</article>
+</main>
+      </div><!--
+<footer class="footer">
+  <span>
+      Copyright &copy; 2025 Harkaitz Agirre.
+      All Rights Reserved.
+  </span>
+</footer>
+-->
+</div>
+
+    <script src="/assets/js/theme.js"></script>
+  </body>
+</html>

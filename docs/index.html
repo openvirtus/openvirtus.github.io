@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Terminal tools for a real sustained development." />
+<meta name="author" content="Harkaitz Agirre" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work." />
+<meta property="og:description" content="Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work." />
+<link rel="canonical" href="https://devreal.org/" />
+<meta property="og:url" content="https://devreal.org/" />
+<meta property="og:site_name" content="/dev/real - Terminal tools for real sustained development." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Terminal tools for a real sustained development." />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Harkaitz Agirre"},"description":"Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work.","headline":"Terminal tools for a real sustained development.","name":"/dev/real - Terminal tools for real sustained development.","url":"https://devreal.org/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://devreal.org/feed.xml" title="/dev/real - Terminal tools for real sustained development." /><title>/dev/real - Terminal tools for real sustained development. | Terminal tools for a real sustained development.</title>
+</head>
+<body>
+    <div class="flexWrapper"><header class="headerWrapper">
+  <div class="header">
+    <div>
+      <a class="terminal" href="/">
+        <span class="terminalHost">$</span><span class="terminalSeparator">&nbsp;cd&nbsp;<span style="opacity: 0.3;">/</span><strong>dev</strong><span style="opacity: 0.3;">/</span><strong>real.org</strong></span>
+      </a>
+    </div>
+    <input class="side-menu" type="checkbox" id="side-menu">
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span><span class="hamb-line-text visually-hidden">Menu</span></label>
+    <nav class="headerLinks">
+        <ul>
+            <li>
+                <a href="/style" title="Style" >
+                    ~/Style
+                </a>
+            </li>
+            <li>
+                <a href="/env" title="EnvVar" >
+                    ~/EnvVar
+                </a>
+            </li><li><div id="theme-toggle">
+  <div data-theme-controls>
+    <div class="color-scheme-status visually-hidden" role="status"></div>
+    <button class="color-scheme-toggle" title="Light and dark mode toggle">
+      <svg class="icon light" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <line x1="92.8" y1="59" x2="85.1" y2="40.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="43" y1="108.8" x2="24.5" y2="101.1" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="213" y1="108.8" x2="231.5" y2="101.1" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="163.2" y1="59" x2="170.9" y2="40.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="240" y1="160" x2="16" y2="160" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="208" y1="200" x2="48" y2="200" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <path d="M70.2,160a60,60,0,1,1,115.6,0" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></path>
+      </svg>
+      <svg class="icon dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <line x1="216" y1="112" x2="216" y2="64" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="240" y1="88" x2="192" y2="88" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="168" y1="24" x2="168" y2="56" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="184" y1="40" x2="152" y2="40" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <path d="M216.7,152.6A91.9,91.9,0,0,1,103.4,39.3h0A92,92,0,1,0,216.7,152.6Z" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+</li>
+        </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+<div class="content">
+        <main class="main" aria-label="Content"><article class="postWrapper">
+  <header class="postHeader">
+    <h1>Terminal tools for a real sustained development.</h1>
+  </header>
+
+  <div style="max-width: 80ch;" class="postContent">
+    <p>Modern software development feels like chasing smoke, frameworks rise
+and fall, GUIs shift faster than we can learn them, and the tools we
+depend on are often opaque, bloated, or short-lived. <em>Real development</em>
+seems impossible, not lasting.</p>
+
+<p>At <code class="language-plaintext highlighter-rouge">/dev/real</code>, we reject this cycle. We believe the future doesn’t lie
+in ever more complex interfaces, but in returning to something older
+(and better) speech and text as the primary mode of interaction with
+machines.</p>
+
+<p>Rooted in the Unix philosophy, <code class="language-plaintext highlighter-rouge">/dev/real</code> wants to promote tools that
+are minimal and composable. Our aim is to invent modern, efficient
+workflows that live in the terminal: fast, scriptable, transparent, and
+distraction-free.</p>
+
+<p>No layers you didn’t ask for. No surprises. Just real tools for real work.</p>
+
+<p>Check out <a href="/style">Style Guide</a> for more.</p>
+
+<p>A list of development tools <a href="/devel">here</a>.</p>
+
+<p>Tag legend:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(t|g w p|l)
+ | | | '--- POSIX|Linux
+ | | '--- Windows
+ | '--- GUI
+ '--- Terminal
+</code></pre></div></div>
+
+<h2 id="operating-systems">Operating systems</h2>
+
+<ul>
+  <li><a href="https://voidlinux.org/">Void Linux</a>:
+No SystemD, simple and fast, rolling release.</li>
+  <li><a href="https://www.debian.org/">Debian</a>:
+SystemD, stable, good hardware support.</li>
+  <li><a href="https://www.openbsd.org/">OpenBSD</a>:
+Good for security, simplicity and stability. Less hardware support than Linux.</li>
+  <li><a href="/windows">Busybox/Windows</a>:
+It is possible to transform Windows into a decent development environment. Read
+this <a href="/windows">guide</a>.</li>
+</ul>
+
+<h2 id="desktops">Desktops</h2>
+
+<p>Desktop environments:</p>
+
+<ul>
+  <li><a href="https://www.xfce.org/">XFCE</a> <em>(g-p c,gtk)</em>:
+Good for a simple and fast desktop environment.</li>
+</ul>
+
+<p>Remote desktops.</p>
+
+<ul>
+  <li><a href="https://tigervnc.org/">TigerVNC</a> <em>(gwp c++)</em>: Remote desktop client and server.</li>
+  <li><a href="https://github.com/LibVNC/x11vnc">X11VNC</a> <em>(g-p c)</em> : VNC server.</li>
+</ul>
+
+<h2 id="shells-and-terminals">Shells and terminals</h2>
+
+<p>Shells:</p>
+
+<ul>
+  <li>
+    <p><a href="/notes#Busybox">Busybox shell (ash)</a> <em>(twp c)</em>:
+A good minimal shell.</p>
+  </li>
+  <li>
+    <p><a href="https://github.com/ibara/oksh">Korn shell terminal</a> <em>(t-p c)</em>:
+Good immersive environment for programming and system administration.</p>
+  </li>
+</ul>
+
+<p>Terminals:</p>
+
+<ul>
+  <li><a href="/notes#xterm">XTerm</a> <em>(g-p c)</em> : The classic terminal emulator.</li>
+</ul>
+
+<p>Remote access:</p>
+
+<ul>
+  <li><a href="https://www.openssh.com/">OpenSSH</a> <em>(twp c)</em>  : Remote login client and tunnelling tool.</li>
+</ul>
+
+<p>Terminal utilities and multiplexers</p>
+
+<ul>
+  <li><a href="https://github.com/walles/moor">moor</a> <em>(twp go)</em> : Good pager, an alternative to less.</li>
+  <li><a href="https://github.com/tmux/tmux">tmux</a> <em>(t-p c)</em> : Multiplexer.</li>
+</ul>
+
+<h2 id="text-editors">Text editors</h2>
+
+<ul>
+  <li><a href="https://www.gnu.org/software/emacs/">GNU Emacs</a> <em>(gwp c,elisp)</em> :
+A good text editor.</li>
+</ul>
+
+<h2 id="www-the-world-wide-web">WWW (The World Wide Web)</h2>
+
+<p>Browsers:</p>
+
+<ul>
+  <li><a href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> <em>(gwp c++,gtk+)</em>:
+An open source web browser, better than alternatives.</li>
+</ul>
+
+<p>The small web (gopher/gemini):</p>
+
+<ul>
+  <li><a href="https://github.com/skyjake/lagrange">lagrange</a> <em>(gwp c)</em> : Small gopher/gemini web browser.</li>
+  <li><a href="https://github.com/makew0rld/amfora">amfora</a> <em>(twp go)</em>   : Gemini client for the terminal.</li>
+</ul>
+
+<h2 id="mail-chats-and-telephony">Mail, chats and telephony</h2>
+
+<p>Mail:</p>
+
+<ul>
+  <li><a href="https://sylpheed.sraoss.jp/en/">Sylpheed</a> <em>(gwp c++,gtk+)</em> : Mail reader.</li>
+</ul>
+
+<p>Chats:</p>
+
+<ul>
+  <li><a href="https://telegram.org/?setln=es">telegram</a> <em>(gwp c++,qt)</em> : Telegram WhatsApp alternative.</li>
+  <li><a href="https://hexchat.github.io/">hexchat</a> <em>(gwp c,gtk)</em> : IRC Client.</li>
+</ul>
+
+<p>Telephony:</p>
+
+<ul>
+  <li><a href="https://www.microsip.org/">microsip</a> <em>(gw- c++)</em> : Good SIP phone. (works with wine)</li>
+</ul>
+
+<h2 id="office-tasks">Office tasks</h2>
+
+<p>Text processors:</p>
+
+<ul>
+  <li><a href="https://www.texmacs.org/">texmacs</a>  <em>(gwp c,guile)</em> : Good WYSIWYG advanced text editor.</li>
+  <li><a href="https://www.libreoffice.org/">libreoffice</a> <em>(gwp c++)</em> : Office Suite.</li>
+</ul>
+
+<p>Text processor Utilities:</p>
+
+<ul>
+  <li><a href="https://pandoc.org/">pandoc</a> <em>(twp python)</em> : Document converter.</li>
+  <li><a href="https://hunspell.github.io/">hunspell</a> <em>(twp c++)</em> : Spell checker.</li>
+</ul>
+
+<p>PDF Readers:</p>
+
+<ul>
+  <li><a href="https://www.sumatrapdfreader.org/free-pdf-reader">sumatra</a> <em>(gw- c++)</em> : PDF Reader.</li>
+</ul>
+
+<p>Shared directory.</p>
+
+<ul>
+  <li><a href="https://rclone.org/">rclone</a> <em>(twp go)</em> : Service directories with <code class="language-plaintext highlighter-rouge">HTTP/WebDAV/FTP/SFTP/DLNA</code>.</li>
+  <li><a href="https://github.com/libfuse/sshfs">sshfs</a> <em>(twp c)</em> : Mount OpenSSH directories.</li>
+</ul>
+
+<h2 id="finance-and-accounting">Finance and accounting</h2>
+
+<p>Accounting ledgers (ledger format):</p>
+
+<ul>
+  <li><a href="https://hledger.org/">hledger</a> <em>(twp haskell)</em> : Professional accounting.</li>
+</ul>
+
+<p>Tickers:</p>
+
+<ul>
+  <li><a href="https://www.coingecko.com/">coingecko</a> <em>(twp go)</em> : Cryptocurrency tickers.</li>
+  <li><a href="https://github.com/achannarasappa/ticker">ticker</a> <em>(twp go)</em> : Stock market tickers.</li>
+</ul>
+
+<h2 id="multimedia">Multimedia</h2>
+
+<p>Music Collection:</p>
+
+<ul>
+  <li><a href="https://www.musicpd.org/">mpd</a> <em>(twp c)</em> : Music server.</li>
+  <li><a href="https://www.musicpd.org/clients/mpc/">mpc</a> <em>(twp c)</em> : Music terminal client.</li>
+  <li><a href="https://github.com/yktoo/ymuse">ymuse</a> <em>(g-p go)</em> : MPD GUI Client.</li>
+  <li><a href="https://github.com/torum/MPDCtrl">mpdctrl</a> <em>(gw- c++)</em> : MPD GUI Client.</li>
+</ul>
+
+<p>Graphics:</p>
+
+<ul>
+  <li><a href="https://www.gimp.org/">gimp</a> <em>(gwp c,gtk)</em> : Image editor.</li>
+  <li><a href="https://nomacs.org/">nomacs</a> <em>(gw- c++)</em> : Image viewer.</li>
+</ul>
+
+<h2 id="time-weather-tides-">Time, weather, tides, …</h2>
+
+<p>Clock utilities.</p>
+
+<ul>
+  <li><a href="https://github.com/harkaitz/sh-alarm-clock">alarm-clock</a> <em>(twp sh)</em> :
+Alarm clock for cron, uses beep to wake you up.</li>
+  <li><a href="https://github.com/harkaitz/sh-stopclock">stopclock</a> <em>(twp sh)</em> :
+A command line stopwatch and time difference calculator.</li>
+  <li><a href="https://github.com/harkaitz/sh-tzview">tzview</a> <em>(twp sh)</em> :
+Display in local time the moment in time in other timezones.</li>
+</ul>
+
+<p>The sun.</p>
+
+<ul>
+  <li><a href="https://github.com/jbreckmckye/daylight">daylight</a> <em>(twp go)</em> : Track sunrise and sunset times.</li>
+</ul>
+
+<p>Weather:</p>
+
+<ul>
+  <li><a href="https://github.com/ashish0kumar/stormy">stormy</a> <em>(twp go)</em> : Weather CLI like neofetch.</li>
+  <li><a href="https://git.sr.ht/~timharek/yr">yr</a> <em>(twp go)</em> : Weather forecast.</li>
+</ul>
+
+<p>Tides:</p>
+
+<ul>
+  <li><a href="http://svhorizon.com/wxtide32">wxtide32</a> <em>(gw-)</em> : Tide prediction program. (works with wine)</li>
+</ul>
+
+<h2 id="archivers">Archivers.</h2>
+
+<ul>
+  <li><a href="https://www.7-zip.org/">7z</a> <em>(twp c)</em> : File archiver with a high compression ratio.</li>
+</ul>
+
+<h2 id="system-utilities">System utilities</h2>
+
+<p>System information:</p>
+
+<ul>
+  <li><a href="https://github.com/fastfetch-cli/fastfetch">fastfetch</a> <em>(twp go)</em> : Display system information.</li>
+  <li><a href="/notes#pciutils">pciutils</a> <em>(twp c)</em> : List devices connected to the PCI bus.</li>
+</ul>
+
+<p>Permission elevation:</p>
+
+<ul>
+  <li><a href="https://code.kliu.org/misc/elevate">elevate</a> <em>(tw- c)</em> : Execute programs elevated on Windows.</li>
+  <li><a href="https://github.com/slicer69/doas">doas</a> <em>(t-p c)</em> : Execute commands as another user.</li>
+</ul>
+
+<p>Storage analysis:</p>
+
+<ul>
+  <li><a href="https://windirstat.net/">windirstat</a> <em>(gw- c++)</em> : Disk usage analyser.</li>
+  <li><a href="https://github.com/dundee/gdu">gdu</a> <em>(twp go)</em> : Disk usage analyser.</li>
+</ul>
+
+<p>Wake-up:</p>
+
+<ul>
+  <li><a href="https://github.com/jonathanruiz/wakey">wakey</a> <em>(twp go)</em>  : A TUI for waking your devices using Wake-on-LAN.</li>
+</ul>
+
+<p>Package management:</p>
+
+<ul>
+  <li><a href="https://github.com/orhun/pkgtop">pkgtop</a> <em>(t-l go)</em> : Interactive package manager and resource monitor tool for GNU/Linux.</li>
+</ul>
+
+<h2 id="large-language-models">Large Language Models</h2>
+
+<ul>
+  <li><a href="https://github.com/aandrew-me/tgpt">tgpt</a> <em>(twp go)</em> : AI in your Terminal without API keys.</li>
+  <li><a href="https://github.com/ekkinox/yai">yai</a> <em>(twp go)</em> : AI powered terminal assistant.</li>
+</ul>
+
+<h2 id="spreadsheets-csv">Spreadsheets (CSV)</h2>
+
+<ul>
+  <li><a href="https://github.com/nao1215/sqly">sqly</a> <em>(twp go)</em> : Execute SQL against CSV, TSV, LTSV, and Microsoft Excel.</li>
+  <li><a href="https://github.com/johnkerl/miller">miller</a> <em>(twp go)</em> : Miller is like <code class="language-plaintext highlighter-rouge">awk/sed/cut/join</code>, for <code class="language-plaintext highlighter-rouge">CSV/TSV/JSON/JSON</code>.</li>
+  <li><a href="https://github.com/dinedal/textql">textql</a> <em>(gwp go)</em>  : Execute SQL against structured text like CSV or TSV.</li>
+  <li><a href="https://github.com/tenox7/ttyplot">ttyplot</a> <em>(twp c)</em> : A real-time terminal plotting utility with data input from stdin.</li>
+</ul>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Check out our <a href="/style">style guide</a> and <a href="/env">environment variables</a>. If your
+program meets the criteria, or approaches it, make a merge request to <a href="https://github.com/openvirtus/devreal.org">here</a>.</p>
+
+
+  </div>
+</article>
+</main>
+      </div><!--
+<footer class="footer">
+  <span>
+      Copyright &copy; 2025 Harkaitz Agirre.
+      All Rights Reserved.
+  </span>
+</footer>
+-->
+</div>
+
+    <script src="/assets/js/theme.js"></script>
+  </body>
+</html>

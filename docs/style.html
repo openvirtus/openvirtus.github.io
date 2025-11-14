@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Style Guide" />
+<meta name="author" content="Harkaitz Agirre" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work." />
+<meta property="og:description" content="Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work." />
+<link rel="canonical" href="https://devreal.org/style" />
+<meta property="og:url" content="https://devreal.org/style" />
+<meta property="og:site_name" content="/dev/real - Terminal tools for real sustained development." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Style Guide" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Harkaitz Agirre"},"description":"Rooted in the Unix philosophy, /dev/real publishes tools that are minimal and composable. But we’re not just preserving old patterns — we’re exploring new ones. Our aim is to invent modern, efficient workflows that live in the terminal: fast, scriptable, transparent, and distraction-free. No layers you didn’t ask for. No surprises. Just real tools for real work.","headline":"Style Guide","url":"https://devreal.org/style"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://devreal.org/feed.xml" title="/dev/real - Terminal tools for real sustained development." /><title>/dev/real - Terminal tools for real sustained development. | Style Guide</title>
+</head>
+<body>
+    <div class="flexWrapper"><header class="headerWrapper">
+  <div class="header">
+    <div>
+      <a class="terminal" href="/">
+        <span class="terminalHost">$</span><span class="terminalSeparator">&nbsp;cd&nbsp;<span style="opacity: 0.3;">/</span><strong>dev</strong><span style="opacity: 0.3;">/</span><strong>real.org</strong></span>
+      </a>
+    </div>
+    <input class="side-menu" type="checkbox" id="side-menu">
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span><span class="hamb-line-text visually-hidden">Menu</span></label>
+    <nav class="headerLinks">
+        <ul>
+            <li>
+                <a href="/style" title="Style" >
+                    ~/Style
+                </a>
+            </li>
+            <li>
+                <a href="/env" title="EnvVar" >
+                    ~/EnvVar
+                </a>
+            </li><li><div id="theme-toggle">
+  <div data-theme-controls>
+    <div class="color-scheme-status visually-hidden" role="status"></div>
+    <button class="color-scheme-toggle" title="Light and dark mode toggle">
+      <svg class="icon light" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <line x1="92.8" y1="59" x2="85.1" y2="40.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="43" y1="108.8" x2="24.5" y2="101.1" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="213" y1="108.8" x2="231.5" y2="101.1" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="163.2" y1="59" x2="170.9" y2="40.5" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="240" y1="160" x2="16" y2="160" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="208" y1="200" x2="48" y2="200" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <path d="M70.2,160a60,60,0,1,1,115.6,0" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></path>
+      </svg>
+      <svg class="icon dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 256 256">
+        <rect width="256" height="256" fill="none"></rect>
+        <line x1="216" y1="112" x2="216" y2="64" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="240" y1="88" x2="192" y2="88" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="168" y1="24" x2="168" y2="56" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <line x1="184" y1="40" x2="152" y2="40" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></line>
+        <path d="M216.7,152.6A91.9,91.9,0,0,1,103.4,39.3h0A92,92,0,1,0,216.7,152.6Z" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="22"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+</li>
+        </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+<div class="content">
+        <main class="main" aria-label="Content"><article class="postWrapper">
+  <header class="postHeader">
+    <h1>Style Guide</h1>
+  </header>
+
+  <div style="max-width: 80ch;" class="postContent">
+    <p>This is a list of preferred styles and conventions for writing code in
+our humble opinion. It is a work in progress and will be updated as needed.</p>
+
+<h2 id="general-guidelines">General Guidelines</h2>
+
+<h3 id="configuration-with-environment-variables">Configuration with environment variables</h3>
+
+<p>The programs should be configured using environment variables. Check
+our environment variable list <a href="/env">here</a>.</p>
+
+<h3 id="programs-not-plugins">Programs, not plugins</h3>
+
+<p>We prefer standalone programs that can be run independently rather than
+plugins that require a specific host application. If a program requires
+extension, it should be extensible by writing additional programs.</p>
+
+<p>For example, image you have a program named <code class="language-plaintext highlighter-rouge">foo</code> that performs checks
+on a text. For defining new checks, instead of exposing a plugin API
+<code class="language-plaintext highlighter-rouge">foo</code> should find and call program with a certain name <code class="language-plaintext highlighter-rouge">foo__addon</code> for
+example, and document the API <code class="language-plaintext highlighter-rouge">foo__addon</code> should expose.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ detect_animals (program) (no)
+  |--&gt; dogs.so (library)
+  '--&gt; cats.so (library)
+
+$ detect_animals (program) (yes)
+  |--&gt; detect_animals__dogs (program)
+  '--&gt; detect_animals__cats (program)
+</code></pre></div></div>
+
+<p>This way the operator can use any programming language. If the add-ons
+needed to call some facilities from the program then write a helper
+program for that. Check <a href="/env#Definitions">definitions</a>.</p>
+
+<h3 id="programs-should-support-help--h--v--v">Programs should support “–help”, “-h”, “-V”, “-v”.</h3>
+
+<p>Programs should print a help summary when –help or -h is the first
+argument. With <code class="language-plaintext highlighter-rouge">-V</code>, it should print the configuration. Use <code class="language-plaintext highlighter-rouge">-v</code> and <code class="language-plaintext highlighter-rouge">$VERBOSE</code>
+for activating verbose messages.</p>
+
+<p>If possible be <code class="language-plaintext highlighter-rouge">getopt(1/3)</code> compatible.</p>
+
+<h3 id="scripts-should-support-sourcinginclusion">Scripts should support sourcing/inclusion.</h3>
+
+<p>Programs written in a scripting language should support being included.
+This allows to create bundles.</p>
+
+<p>Shell scripts:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if test @"${0##*/}" = @"my-program"; then
+    ...
+fi
+</code></pre></div></div>
+
+<p>Python scripts:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if __name__ == '__main__':
+    ...
+</code></pre></div></div>
+
+<p>Tcl/Tk scripts:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if {[file tail $argv0] eq [file tail [info script]]} {
+    ...
+}
+</code></pre></div></div>
+
+<h3 id="print-the-trace-only-when-debug-is-set">Print the trace only when <code class="language-plaintext highlighter-rouge">$DEBUG</code> is set.</h3>
+
+<p>Some scripts when failing to read a file, or any other common failure
+print a trace, it is better to print a concise “Can’t open X” error
+instead. Print the trace if DEBUG environment variable is set.</p>
+
+<h3 id="a-working-makefile-or-gnumakefile">A working Makefile or GNUmakefile.</h3>
+
+<p>All make files shall support <code class="language-plaintext highlighter-rouge">all</code> and <code class="language-plaintext highlighter-rouge">install</code>. The <code class="language-plaintext highlighter-rouge">install</code> target
+shall not depend on <code class="language-plaintext highlighter-rouge">all</code> so that <code class="language-plaintext highlighter-rouge">sudo make install</code> works.</p>
+
+<p>If the make file is POSIX compatible, name it “Makefile”, otherwise
+name it “GNUmakefile”.</p>
+
+<p>All make files shall support <code class="language-plaintext highlighter-rouge">DESTDIR</code> and <code class="language-plaintext highlighter-rouge">PREFIX</code> to specify the
+installation target.</p>
+
+<h2 id="scripting-programming-languages">Scripting programming languages</h2>
+
+<h3 id="posix-shell-programming-language">POSIX Shell programming language.</h3>
+
+<p>You should follow the <a href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html">POSIX standard</a>.</p>
+
+<p>The general template:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/sh -e
+#h: Usage: my-program ...
+#h:
+#h: Description.
+my_program() {
+    ...
+}
+if test @"${0##*/}" = @"my-program"; then
+    case "${1}" in
+        ''|-h|--help) sed -n 's/^ *#h: \{0,1\}//p' "$0";;
+        -V)           true;;
+        *)            my_program "$@"; exit 0;;
+    esac
+fi
+</code></pre></div></div>
+
+<p>In parts:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">set -e</code> : All scripts should run with <code class="language-plaintext highlighter-rouge">sh -e</code> or <code class="language-plaintext highlighter-rouge">set -e</code> so that
+the program aborts in the first error (as any other sane scripting
+language).</li>
+  <li><code class="language-plaintext highlighter-rouge">#h:</code> : Help string.</li>
+  <li><code class="language-plaintext highlighter-rouge">-V</code> : Prints the environment variables that the program uses.</li>
+</ol>
+
+<p>Command line arguments:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+my_program() {
+    local OPTIND=1 optopt output=
+    while getopts "o:" optopt; do # OPTARG
+        case $optopt in
+            'o') output="$OPTARG";;
+            \?)  return 1;;
+        esac
+    done
+    shift $(( $OPTIND - 1 ))
+    for arg in "$@"; do
+        ...
+    done
+}
+...
+</code></pre></div></div>
+
+<h3 id="python-programming-language">Python programming language.</h3>
+
+<p>The general template is as follows:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/bin/env python3
+"""
+Usage: my-program ARGS...
+
+description.
+"""
+import os
+import sys
+
+def my_program(arguments):
+    ...
+
+if __name__ == '__main__':
+    if len(sys.argv) &lt;= 1 or sys.argv[1] in ['-h', '--help']:
+        sys.stdout.write(__doc__.strip()+'\n')
+        sys.exit(0)
+    elif os.getenv('DEBUG') is None:
+        try:
+            my_program(sys.argv[1:])
+        except Exception as err:
+            sys.stderr.write('my-program: error: ' + str(err) + '.\n')
+            sys.exit(2)
+    else:
+        my_program(sys.argv[1:])
+</code></pre></div></div>
+
+<p>Command line arguments:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+import getopt
+...
+def my_program(arguments):
+    opts, args = getopt.getopt(arguments, 'o:')
+    for optopt, optarg in opts:
+        if optopt == 'o':
+            ...
+...
+</code></pre></div></div>
+
+<h3 id="tcltk-programming-language">Tcl/Tk programming language.</h3>
+
+<p>The general template:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/bin/env tclsh
+set MY_PROGRAM_HELP "Usage: my_program ...
+
+..."
+proc my_program { args } {
+    ...
+}
+if {[file tail $argv0] eq [file tail [info script]]} {
+    if {[lsearch {"-h" "--help" ""} [lindex $argv 0]] != -1} {
+        puts $MY_PROGRAM_HELP
+    } elseif {[info exists env(DEBUG)]} {
+        my_program {*}$argv
+    } elseif {[catch {
+        my_program {*}$argv
+    } err]} {
+        puts stderr "my_program: $err"
+        exit 1
+    }
+}
+</code></pre></div></div>
+
+
+  </div>
+</article>
+</main>
+      </div><!--
+<footer class="footer">
+  <span>
+      Copyright &copy; 2025 Harkaitz Agirre.
+      All Rights Reserved.
+  </span>
+</footer>
+-->
+</div>
+
+    <script src="/assets/js/theme.js"></script>
+  </body>
+</html>
